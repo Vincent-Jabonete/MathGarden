@@ -9,8 +9,13 @@ app.use(express.static(__dirname + '/dist'));
 // Heroku port
 app.listen(process.env.PORT || 8080);
 
-app.get('/',function(req, res){
-    res.sendFile(path.join(__dirname+'/index.html'));
-  });
+// app.get('/',function(req, res){
+//     res.sendFile(path.join(__dirname+'/index.html'));
+//   });
+
+  app.get('/*', function(req,res) {
+    
+    res.sendFile(path.join(__dirname+'/dist/mathgarden/index.html'));
+    });
 
 console.log('Console Listening!');
