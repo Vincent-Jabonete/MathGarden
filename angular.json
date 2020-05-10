@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "mathgarden"
+    }
+  },
+  "defaultProject": "mathgarden",
+  "cli": {
+    "analytics": "3c46ff11-e7d1-4c8f-876c-294874f0ef63"
+  }
 }
