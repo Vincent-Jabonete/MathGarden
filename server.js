@@ -1,29 +1,17 @@
-// server.js
 const express = require('express');
 const app = express();
-const path = require ('path');
-// Run the app by serving the static files
-// in the dist directory
-app.use(express.static(__dirname + '/dist'));
-// Start the app by listening on the default
-// Heroku port
-app.listen(process.env.PORT || 8080);
+const path = require('path');
+const port = process.env.PORT || 8000;
+const server = require('http').Server(app);
 
-// app.get('/',function(req, res){
-//     res.sendFile(path.join(__dirname+'/index.html'));
-//   });
+app.use(express.static(__dirname + '/src'));
 
-  app.get('/*', function(req,res) {
-    
-    res.sendFile(path.join(__dirname, 'src', 'index.html'));
-    });
+server.listen(port, function() {
+    console.log("App running on port " + port);
+})
 
-    app.get('', function(req, res) {
-        res.sendFile(path.join(__dirname, 'src', 'index.html'));
-    });
-    
-    app.get('/', function(req, res) {
-        res.sendFile(path.join(__dirname, 'src', 'index.html'));
-    });
+// PathLocationStrategy
 
-console.log('Console Listening!');
+app.get('/*', function(req, res) {
+    res.sendFile(path.join(__dirname + '/src/index.html'));
+})
