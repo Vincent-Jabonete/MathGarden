@@ -15,15 +15,15 @@ app.listen(process.env.PORT || 8080);
 
   app.get('/*', function(req,res) {
     
-    res.sendFile(path.join(__dirname +'/dist/mathgarden/index.html'));
+    res.sendFile(path.join(__dirname +'/src/index.html'));
     });
 
     app.get('', function(req, res) {
-        res.sendFile(path.join(__dirname +'/dist/mathgarden/index.html'));
+        res.sendFile(path.join(__dirname +'/src/index.html'));
     });
     
     app.get('/', function(req, res) {
-        res.sendFile(path.join(__dirname +'/dist/mathgarden/index.html'));
+        res.sendFile(path.join(__dirname +'/src/index.html'));
     });
 
 console.log('Console Listening!');
