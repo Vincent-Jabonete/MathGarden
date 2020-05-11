@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
-
+import * as jQuery from 'jquery';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
