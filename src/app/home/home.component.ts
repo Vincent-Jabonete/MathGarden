@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-home',
@@ -11,5 +12,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+
+
+  images = ['../../assets/img/1.png', '../../assets/img/7.png','../../assets/img/9.png'];
 
 }

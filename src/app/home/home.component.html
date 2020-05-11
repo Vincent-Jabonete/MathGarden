@@ -3,10 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
+<!------------Start Div--------->
+<div>
+
+   <!--------Navigation ------>
+
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fa fa-align-justify"></i>
+    </label>
+  
+  
+    <label for="" class="logo">MathGarden</label>
+        <ul>
+            <li><a mat-button class="active" routerLink="/home">Home</a></li>
+            <li><a mat-button routerLink="/aboutus">About</a></li>
+            <li><a mat-button routerLink="/services">Services</a></li>
+            <li><a mat-button routerLink="/contact">Contact</a></li>
+            <li><a mat-button >Logout</a></li>
+            <li><a mat-button href="https://drive.google.com/file/d/1ITvEZMxH8KIKku5Qfb_cQHBHezF1raBw/view" >Download</a></li>
+        </ul>
+  </nav>
+  
+  <!-------------End Navigation------->
+
+
+
+<!--------Carousel Sliding Image--------->
+
+
+<ngb-carousel>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img class="container-images" src="../../assets/img/1.png" alt="Random first slide">
+      </div>
+      <div class="carousel-caption">
+   
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img class="container-images" src="../../assets/img/2.png" alt="Random second slide">
+      </div>
+      <div class="carousel-caption">
+     
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img  class="container-images" src="../../assets/img/9.png" alt="Random third slide">
+      </div>
+      <div class="carousel-caption">
+        
+      </div>
+    </ng-template>
+
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img class="container-images" src="../../assets/img/11.png" alt="Random fourth slide">
+      </div>
+      <div class="carousel-caption">
+   
+      </div>
+    </ng-template>
+
+
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img class="container-images" src="../../assets/img/12.png" alt="Random fifth slide">
+      </div>
+      <div class="carousel-caption">
+      
+      </div>
+    </ng-template>
+  </ngb-carousel>
+
+<!-------End Carousel--------->
+
+
+
+<!-----------Wrap Text Image------->
+
+<section class="bg-light">
+    <div class="container-fluid">
+      <div class="row align-items-center row mx-md-5 ">
     
-    <h1>Welcome Vincent to Home Page!</h1>
+    
+    <div class="col-md-6  element-animate">
+    <div>
+    <h3 class="text-uppercase ">MathGarden</h3>
+    <a class="line">____</a>
+    <p class="justify-content-center mr-md-5 ">It is a mobile application that the user can learn in different topics such as sorting and classifying with 2D/3D shapes, object comparison, for counting with add and subtract the object, number with fraction and measurements.</p>
+    </div>
+    </div>
+    <div class="col-md-6 element-animate">
+    <img src="../../assets/img/1.png" alt="" class="img-fluid">
+    </div>
+    
+      </div>
+    </div>
+    </section>
+    <!-------End  Wrap Text Image----->
+
+
+
+<!-----Grid Design------>
+<div class="container-fluid">
+    <div class="row justify-content-center">
+    
+      <div class="text-center">
+      <h2 class="text-uppercase text-center">Recent Design</h2>
+      <a class="line">____</a>
+      <p class="text-center">This part displays the actual screen shot of the app <br>from the start up to the main functionalities.</p>
+    </div>
+    
+      <div class="row mx-md-5">
+    
+        <div class="col-md-4">
+          <img src="../../assets/img/1.png" alt="" class="img-fluid">
+        </div>
+    
+        <div class="col-md-4">
+          <img src="../../assets/img/2.png" alt="" class="img-fluid">
+        </div>
+    
+        <div class="col-md-4">
+          <img src="../../assets/img/3.png" alt="" class="img-fluid">
+        </div>
+    
+        <div class="col-md-4">
+          <img src="../../assets/img/4.png" alt="" class="img-fluid">
+        </div>
+    
+        <div class="col-md-4">
+          <img src="../../assets/img/5.png" alt="" class="img-fluid">
+        </div>
+    
+        <div class="col-md-4">
+          <img src="../../assets/img/quiz.png" alt="" class="img-fluid">
+        </div>
+    
+        <div class="col-md-4">
+          <img src="../../assets/img/tutorial.png" alt="" class="img-fluid">
+        </div>
+    
+        <div class="col-md-4">
+          <img src="../../assets/img/corrent.png" alt="" class="img-fluid">
+        </div>
+    
+        <div class="col-md-4">
+          <img src="../../assets/img/wrong.png" alt="" class="img-fluid">
+        </div>
+    
+    
+      </div>
+      </div>
+    </div>
+    <!--------End Grid Design------->
+
+
+
+
+
+
+
+
+ <!--------End Div--------->
+</div>
 </body>
 </html>

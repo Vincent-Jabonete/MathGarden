@@ -7,6 +7,9 @@ import { HomeComponent } from './home/home.component';
 
 import { RouterModule } from '@angular/router';
 
+import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
+import {MatButtonModule} from '@angular/material/button';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,6 +18,11 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgbPaginationModule,
+    NgbAlertModule,
+    NgbModule,
+    MatButtonModule,
+ 
     RouterModule.forRoot([
       {
         path:'home',
