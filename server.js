@@ -16,6 +16,9 @@ app.listen(process.env.PORT || 8080);
   app.get('/*', function(req,res) {
     
     res.sendFile(path.join(__dirname+'/src/app/home/home.component.html'));
-    });
+    res.sendFile(path.join(__dirname+'/src/app/home/home.component.css'));
+    res.sendFile(path.join(__dirname+'/src/app/home/home.component.ts'));
+    res.sendFile(path.join(__dirname+'/src/app/home/home.component.spec.ts'));
+  });
 
 console.log('Console Listening!');
