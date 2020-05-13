@@ -76,36 +76,40 @@ a.active, a:hover{
   ul{
     position: fixed;
     width:100%;
-    height:60vh;
+    height:100vh;
     background: #2c3e50;
     top:80px;
     left:-100%;
     text-align: center;
     transition: all .5s;
+    position: absolute;
     
   }
   nav ul li {
     display: block;
     margin:1px 0;
-    line-height: 30px;
+    line-height: 10px;
   }
 
   nav ul li a{
-    font-size: 15px;
+    font-size: 10px;
   }
   
   
-  a.active{
+  a:hover,a.active{
   
-    /* background:none; */
+    background:none;
     color: #0082e6;
     
   }
+  a.active, a:hover{
+    background: #0082e6;
+  }
+  
 
   #check:checked ~ ul {
     
     left:0;
-    position: fixed;
     z-index: 100;
   }
 
