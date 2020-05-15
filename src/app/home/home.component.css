@@ -76,7 +76,7 @@ a.active, a:hover{
   ul{
     position: fixed;
     width:100%;
-    height:100vh;
+    height:130vh;
     background: #2c3e50;
     top:80px;
     left:-100%;
@@ -135,32 +135,66 @@ a.active, a:hover{
 p{
   font-size: 20px;
 }
-
-/*-------------Grid Picture ----------------*/
-
-.images:hover{
-  transform: scale(1.01);
-   box-shadow: 0 18px 36px rgba(0, 0, 0, 0.30), 0 14px 11px rgb(0,0,0, 0.22); 
-   z-index: 1; 
-
-
-   transition: transform .2s;
-   box-shadow: 0 18px 30px rgba(0, 0, 0, 0.30), 0 5px 5px rgb(0,0,0, 0.22);
-   margin-bottom: 10px;
-}
-.images{
-  margin-bottom: 10px;
+.desc{
+  font-style: italic;
 }
 
 
+/*-------------Grid Picture---------------*/
+.card{
+  margin-top:8px;
+}
+.inner{
+  overflow: hidden;
+}
+.inner img{
+  transition: all 1.5s ease;
+}
+.inner:hover img{
+  transform: scale(1.5);
+}
 
-@media (max-width: 858px){
+/*---------------Card Image-------------*/
+.card-title{
+  margin-top: 20px;
+}
 
-  .images:hover{
+.card:hover{
+  box-shadow: 0 11px 36px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  transform: scale(1.2);
+}
+@media (max-width: 858px) {
+  .card:hover{
+    box-shadow: 0 8px 11px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
     transform: scale(1.1);
-    transition: transform .2s;
-    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.30), 0 5px 5px rgb(0,0,0, 0.22);
-
   }
+  .learn:hover{
+    background:  #0082e6;
+    color:white;
+  }
+}
+.learn:hover{
+  background:  #0082e6;
+  color:white;
 
 }
+.learn{
+
+  border: solid  #0082e6;
+  padding:5px;
+  color: #0082e6;
+
+  
+}
+
+
+
+
+
+
+  
+
+
+
