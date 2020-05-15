@@ -16,7 +16,8 @@ import { ContactComponent } from './contact/contact.component';
 import { ModalLogoutComponent } from './modal-logout/modal-logout.component';
 import { MatDialogModule } from '@angular/material/dialog'
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
-// import { Ng2CarouselamosModule } from 'ng2-carouselamos';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
     MatButtonModule,
     MatDialogModule ,
     BrowserAnimationsModule,
-    // Ng2CarouselamosModule,
+    CarouselModule,
+    Ng2CarouselamosModule,
 
  
     RouterModule.forRoot([
