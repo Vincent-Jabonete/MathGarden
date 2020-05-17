@@ -8,64 +8,52 @@
     <title>Home</title>
 
 
-
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-   
-        <!-- bootstrap -->
-
-        <!-- Latest compiled and minified CSS -->
+        <!--Font Awesome-->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+      
+        <!-- Latest Bootstrap compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-        <!-- Optional theme -->
+        <!-- Bootstrap theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
-        <!-- [/] bootstrap -->
-
-
-   <!-- jquery -->
-   <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-   <!-- [/] jquery -->
-
-   <!-- bootstrap -->
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-   <!-- [/] bootstrap -->
+        <!-- jquery -->
+        <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+ 
+        <!-- bootstrap -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  
 
   </head>
 <body>
 
-<!------------Start Div--------->
-<div>
-
-   <!--------Navigation ------>
 
 
-<nav>
+  
+
+
+<nav>  <!--------Navigation ------>
     <input type="checkbox" id="check">
-    <label for="check" class="checkbtn">
-      <i class="fa fa-align-justify"></i>
-    </label>
+      <label for="check" class="checkbtn">
+        <i class="fa fa-align-justify"></i>
+      </label>
   
   
-    <label for="" class="logo">MathGarden</label>
-        <ul>
-            <li><a mat-button class="btn active" routerLink="/home">Home</a></li>
-            <li><a mat-button class="btn" routerLink="/about">About</a></li>
-            <li><a mat-button class="btn" routerLink="/services">Services</a></li>
-            <li><a mat-button class="btn" routerLink="/contact">Contact</a></li>
-            <li><a mat-button class="btn" >Logout</a></li>
-            <li><a mat-button class="btn btn-warning" href="https://drive.google.com/file/d/1ITvEZMxH8KIKku5Qfb_cQHBHezF1raBw/view" >Download</a></li>
-        </ul>
-  </nav>
+          <label for="" class="logo">MathGarden</label>
+              <ul>
+                    <li><a mat-button class="btn active" routerLink="/home">Home</a></li>
+                    <li><a mat-button class="btn" routerLink="/about">About</a></li>
+                    <li><a mat-button class="btn" routerLink="/services">Services</a></li>
+                    <li><a mat-button class="btn" routerLink="/contact">Contact</a></li>
+                    <li><a mat-button class="btn" >Logout</a></li>
+                    <li><a mat-button class="btn btn-warning" href="https://drive.google.com/file/d/1ITvEZMxH8KIKku5Qfb_cQHBHezF1raBw/view" >Download</a></li>
+              </ul>
+</nav>  <!-------------End Navigation------->
+
   
-  <!-------------End Navigation------->
+<ngb-carousel> <!--------Carousel Sliding Image--------->
 
-
-
-<!--------Carousel Sliding Image--------->
-
-
-<ngb-carousel>
     <ng-template ngbSlide>
       <div class="picsum-img-wrapper">
         <img class="container-images" src="../../assets/img/1.png" alt="Random first slide">
@@ -96,274 +84,231 @@
         <img class="container-images" src="../../assets/img/12.png" alt="Random fifth slide">
       </div>
     </ng-template>
-  </ngb-carousel>
 
-<!-------End Carousel--------->
-
+</ngb-carousel> <!-------End Carousel--------->
 
 
-<!-----------Wrap Text Image------->
 
-<section class="bg-light">
+<section class="bg-light " > <!-----------Wrap Text Image------->
+
     <div class="container-fluid">
       <div class="row align-items-center row mx-md-5 ">
-    
-    
-    <div class="col-md-6  element-animate">
-    <div>
-    <h3 class="text-uppercase "><b>MathGarden</b></h3>
-    <a class="line">____</a>
-    <p class="justify-content-center mr-md-5 ">It is a mobile application that the user can learn in different topics such as sorting and classifying with 2D/3D shapes, object comparison, for counting with add and subtract the object, number with fraction and measurements.</p>
-    </div>
-    </div>
-    <div class="col-md-6 element-animate">
-    <img src="../../assets/img/1.png" alt="" class="img-fluid">
-    </div>
-    
+        <div class="col-md-6 element-animate">
+          <div class="mt-md-3">
+                <h3 class="text-uppercase "><b>MathGarden</b></h3>
+                <a class="line">____</a>
+                <p class="justify-content-center mr-md-5 ">It is a mobile application that the user can learn in different topics such as sorting and classifying with 2D/3D shapes, object comparison, for counting with add and subtract the object, number with fraction and measurements.</p>
+              </div>
+              </div>
+              <div class="col-md-6 element-animate">
+              <img src="../../assets/img/1.png" alt="" class="img-fluid">
+          </div>
       </div>
     </div>
-    </section>
-    <!-------End  Wrap Text Image----->
+</section>  <!-------End  Wrap Text Image----->
+   
+
+<section> <!-----Recent Header------>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="text-center">
+                  <h2 class="text-uppercase text-center"><b>Recent Design</b></h2>
+                  <a class="line">____</a>
+                  <p class="text-center desc">This part displays the actual screen shot of the app <br>from the start up to the main functionalities.</p>
+              </div>      
+          </div>
+        </div>
+</section> <!---------End Recent Header--------->
 
 
-
-<!-----Title Header------>
-<section>
-  <div class="container-fluid">
-    <div class="row justify-content-center">
-      <div class="text-center">
-      <h2 class="text-uppercase text-center"><b>Recent Design</b></h2>
-      <a class="line">____</a>
-      <p class="text-center desc">This part displays the actual screen shot of the app <br>from the start up to the main functionalities.</p>
-    </div>      
-  </div>
-  </div>
-</section>
-
-<!---------End Title Header--------->
+<section> <!----------Picture 3 Columns--------->
 
 
-<!----------Picture 3 Columns--------->
-
-<section>
   <div class="container-fluid ">
     <div class="row mx-md-5 mb-2">
 
-      <div class=" col-md-4 pb-2 images inner">
-        <img src="../../assets/img/1.png" alt="" class="img-fluid">
-      </div>
+        <div class=" col-md-4 pb-2 images inner">
+            <img src="../../assets/img/1.png" alt="" class="img-fluid">
+        </div>
+              
+        <div class="col-md-4 pb-2 images inner">
+            <img src="../../assets/img/user.png" alt="" class="img-fluid">
+        </div>
 
+        <div class="col-md-4 pb-2 images inner">
+            <img src="../../assets/img/tap.png" alt="" class="img-fluid">
+        </div>
 
-            
-      <div class="col-md-4 pb-2 images inner">
-        <img src="../../assets/img/user.png" alt="" class="img-fluid">
-      </div>
+        <div class="col-md-4 pb-2 images inner">
+            <img src="../../assets/img/2.png" alt="" class="img-fluid">
+        </div>
 
-      
-      <div class="col-md-4 pb-2 images inner">
-        <img src="../../assets/img/tap.png" alt="" class="img-fluid">
-      </div>
+        <div class="col-md-4 pb-2 images inner">
+            <img src="../../assets/img/3.png" alt="" class="img-fluid">
+        </div>
 
-      <div class="col-md-4 pb-2 images inner">
-        <img src="../../assets/img/2.png" alt="" class="img-fluid">
-      </div>
+        <div class="col-md-4 pb-2 images inner">
+            <img src="../../assets/img/4.png" alt="" class="img-fluid">
+        </div>
 
+        <div class="col-md-4 pb-2 images inner">
+            <img src="../../assets/img/5.png" alt="" class="img-fluid">
+        </div>
 
-      <div class="col-md-4 pb-2 images inner">
-        <img src="../../assets/img/3.png" alt="" class="img-fluid">
-      </div>
+        <div class="col-md-4 pb-2 images inner">
+            <img src="../../assets/img/quiz.png" alt="" class="img-fluid">
+        </div>
 
-   
-      <div class="col-md-4 pb-2 images inner">
-        <img src="../../assets/img/4.png" alt="" class="img-fluid">
-      </div>
+        <div class="col-md-4 pb-2 images inner">
+            <img src="../../assets/img/corrent.png" alt="" class="img-fluid">
+        </div>
 
+        <div class="col-md-4 pb-2 images inner">
+            <img src="../../assets/img/wrong.png" alt="" class="img-fluid">
+        </div>
 
-      <div class="col-md-4 pb-2 images inner">
-        <img src="../../assets/img/5.png" alt="" class="img-fluid">
-      </div>
+        <div class="col-md-4 pb-2 images inner">
+            <img src="../../assets/img/pass.png" alt="" class="img-fluid">
+        </div>
 
-
-      
-      <div class="col-md-4 pb-2 images inner">
-        <img src="../../assets/img/quiz.png" alt="" class="img-fluid">
-      </div>
-
-
-      <div class="col-md-4 pb-2 images inner">
-        <img src="../../assets/img/corrent.png" alt="" class="img-fluid">
-      </div>
-
-      
-      <div class="col-md-4 pb-2 images inner">
-        <img src="../../assets/img/wrong.png" alt="" class="img-fluid">
-      </div>
-
-
-      
-      <div class="col-md-4 pb-2 images inner">
-        <img src="../../assets/img/pass.png" alt="" class="img-fluid">
-      </div>
-
-
-      <div class="col-md-4 pb-2 images inner">
-        <img src="../../assets/img/failed.png" alt="" class="img-fluid">
-      </div>
+        <div class="col-md-4 pb-2 images inner">
+            <img src="../../assets/img/failed.png" alt="" class="img-fluid">
+        </div>
 
     </div>
   </div>
-</section>
-
-    
- 
-    <!--------End Grid Design------->
+</section>  <!--------End Grid Design------->
 
 
-<!-------Card Image Desing--------->
+<section> <!-----Services Header------>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="text-center">
+              <h2 class="text-uppercase text-center"><b>Services</b></h2>
+              <a class="line">____</a>
+              <p class="text-center desc">Our services offered such as:</p>
+          </div>      
+        </div>
+    </div>
+</section> <!---------End Services Header--------->
 
 
-<!-----Title Header------>
-<section>
-  <div class="container-fluid">
-    <div class="row justify-content-center">
-      <div class="text-center">
-      <h2 class="text-uppercase text-center"><b>Services</b></h2>
-      <a class="line">____</a>
-      <p class="text-center desc">Our services offered such as:</p>
-    </div>      
-  </div>
-  </div>
-</section>
 
-<!---------End Title Header--------->
-
-<section>
+<section> <!-------Card Image Desing--------->
   <div class="container-fluid">
 
     <div class="row mx-md-5 justify-content-center">
-      <div class="col-md-4  text-center ">
 
-      <div class="card ">
-          <img class="img-fluid card-img-top images" src="../../assets/img/POINT - Final.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title text-uppercase"><b>Point of Sales and Inventory</b></h5>
-            <p class="card-text mb-sm-3">MathGarden are capable to do any transaction regarding to your business.</p>
-            <a  class="btn learn ">Learn More</a>
+
+      <div class="col-md-4  text-center ">
+          <div class="card ">
+                <img class="img-fluid card-img-top images" src="../../assets/img/POINT - Final.jpg" alt="Card image cap">
+                  <div class="card-body">
+                      <h5 class="card-title text-uppercase"><b>Point of Sales and Inventory</b></h5>
+                      <p class="card-text mb-sm-3">MathGarden are capable to do any transaction regarding to your business.</p>
+                      <a  class="btn learn ">Learn More</a>
+                  </div>
           </div>
-        </div>
       </div>
     
      
-    
-      <div class="col-md-4 text-center ">
-        <div class="card">
-          <img class=" card-img-top" src="../../assets/img/images (18).jpeg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title text-uppercase"><b>Website</b></h5>
-            <p class="card-text mb-sm-3">MathGarden are capable to do any website to your business or project.</p>
-            <a  class="btn learn">Learn More</a>
-          </div>
+      
+        <div class="col-md-4 text-center ">
+            <div class="card">
+                <img class=" card-img-top" src="../../assets/img/images (18).jpeg" alt="Card image cap">
+                  <div class="card-body">
+                      <h5 class="card-title text-uppercase"><b>Website</b></h5>
+                      <p class="card-text mb-sm-3">MathGarden are capable to do any website to your business or project.</p>
+                      <a  class="btn learn">Learn More</a>
+                  </div>
+            </div>
         </div>
-      </div>
-      <div class="col-md-4 text-center">
-        <div class="card">
-          <img class="img-fluid card-img-top" src="../../assets/img/images (19).jpeg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title text-uppercase"><b>2D Mobile Application</b></h5>
-            <p class="card-text mb-sm-3">MathGarden are capable to do any 2D Mobile Application or E-learning.</p>
-            <a  class="btn learn">Learn More</a>
-          </div>
+
+        <div class="col-md-4 text-center">
+            <div class="card">
+                <img class="img-fluid card-img-top" src="../../assets/img/images (19).jpeg" alt="Card image cap">
+                  <div class="card-body">
+                      <h5 class="card-title text-uppercase"><b>2D Mobile Application</b></h5>
+                      <p class="card-text mb-sm-3">MathGarden are capable to do any 2D Mobile Application or E-learning.</p>
+                      <a  class="btn learn">Learn More</a>
+                  </div>
+            </div>
         </div>
-      </div>
+        
     </div>
   </div>
-</section>
+</section> <!----------End Card Image--------->
 
 
-<!----------End Card Image--------->
+<section> <!-----News Header------>
+      <div class="container-fluid">
+          <div class="row justify-content-center mx-md-5">
+              <div class="text-center">
+                <h2 class="text-uppercase text-center"><b>Our News</b></h2>
+                <a class="line">____</a>
+                <p class="text-center desc">Our designs are currently updated.</p>
+            </div>      
+        </div>
+      </div>
+</section> <!---------End News Header--------->
 
 
-<!------------Our News Slider ---------->
-<!-----Title Header------>
-<section>
-  <div class="container-fluid">
-    <div class="row justify-content-center mx-md-5">
-      <div class="text-center">
-      <h2 class="text-uppercase text-center"><b>Our News</b></h2>
-      <a class="line">____</a>
-      <p class="text-center desc">Our designs are currently updated.</p>
-    </div>      
-  </div>
-  </div>
-</section>
-
-<!---------End Title Header--------->
-
-
-
-<!--------Carousel Sliding Image--------->
-<div class="container-fluid ">
+<div class="container-fluid sliding "> <!------------Our News Slider ---------->
 <ngb-carousel>
 
-
-  
   <ng-template ngbSlide>
-    <div class="picsum-img-wrapper">
-      <div class="row">
-        <div class="col-md-4">  <img class="container-images" src="../../assets/img/23.png" alt="Random first slide"></div>
-        <div class="col-md-4">  <img class="container-images" src="../../assets/img/24.png" alt="Random first slide"></div>
-        <div class="col-md-4">  <img class="container-images" src="../../assets/img/tutorial.png" alt="Random first slide"></div>
+      <div class="picsum-img-wrapper">
+          <div class="row">
+              <div class="col-md-4">  <img class="container-images" src="../../assets/img/23.png" alt="Random first slide"></div>
+              <div class="col-md-4">  <img class="container-images" src="../../assets/img/24.png" alt="Random first slide"></div>
+              <div class="col-md-4">  <img class="container-images" src="../../assets/img/tutorial.png" alt="Random first slide"></div>
+          </div>
       </div>
-    </div>
   </ng-template>
 
   <ng-template ngbSlide>
-    <div class="picsum-img-wrapper">
-      <div class="row">
-        <div class="col-md-4">  <img class="container-images" src="../../assets/img/1.png" alt="Random first slide"></div>
-        <div class="col-md-4">  <img class="container-images" src="../../assets/img/21.png" alt="Random first slide"></div>
-        <div class="col-md-4">  <img class="container-images" src="../../assets/img/17.png" alt="Random first slide"></div>
+      <div class="picsum-img-wrapper">
+          <div class="row">
+              <div class="col-md-4">  <img class="container-images" src="../../assets/img/1.png" alt="Random first slide"></div>
+              <div class="col-md-4">  <img class="container-images" src="../../assets/img/21.png" alt="Random first slide"></div>
+              <div class="col-md-4">  <img class="container-images" src="../../assets/img/17.png" alt="Random first slide"></div>
+          </div>
       </div>
-    </div>
   </ng-template>
 
   
   <ng-template ngbSlide>
-    <div class="picsum-img-wrapper">
-      <div class="row">
-        <div class="col-md-4">  <img class="container-images" src="../../assets/img/pass.png" alt="Random first slide"></div>
-        <div class="col-md-4">  <img class="container-images" src="../../assets/img/failed.png" alt="Random first slide"></div>
-        <div class="col-md-4">  <img class="container-images" src="../../assets/img/wrong.png" alt="Random first slide"></div>
+      <div class="picsum-img-wrapper">
+          <div class="row">
+              <div class="col-md-4">  <img class="container-images" src="../../assets/img/pass.png" alt="Random first slide"></div>
+              <div class="col-md-4">  <img class="container-images" src="../../assets/img/failed.png" alt="Random first slide"></div>
+              <div class="col-md-4">  <img class="container-images" src="../../assets/img/wrong.png" alt="Random first slide"></div>
+          </div>
       </div>
-    </div>
   </ng-template>
 
 
 </ngb-carousel>
-</div>
+</div> <!-------End News Slider--------->
 
 
-<!-------End Carousel--------->
-
-
-<!---------------Testimonial--------------->
-<!-----Title Header------>
+<!-----Testimonial Header------>
 <section>
-  <div class="container-fluid">
-    <div class="row justify-content-center mx-md-5">
-      <div class="text-center">
-      <h2 class="text-uppercase text-center"><b>Testimonial</b></h2>
-      <a class="line">____</a>
-      <p class="text-center desc mb-md-5">Suggestion and comment of people who are use this mobile application.</p>
-    </div>      
-  </div>
-  </div>
-</section>
-
-<!---------End Title Header--------->
+    <div class="container-fluid">
+        <div class="row justify-content-center mx-md-5">
+            <div class="text-center">
+              <h2 class="text-uppercase text-center"><b>Testimonial</b></h2>
+              <a class="line">____</a>
+              <p class="text-center desc mb-md-5">Suggestion and comment of people who are use this mobile application.</p>
+          </div>      
+      </div>
+    </div>
+</section> <!---------End Testimonial Header--------->
 
 
-<section class="section">
+
+
+<section class="section"> <!---------------Testimonial--------------->
   <div class="container ">
    
 
@@ -376,7 +321,6 @@
             <blockquote>
               <p class="italic">&ldquo;This app is awesome and I was amaze the design and also animtion itself. It is helpful specially the kindergarten.&rdquo;</p>  
             </blockquote>
-
           </div>
         </div>
       </div>
@@ -389,27 +333,76 @@
             <blockquote>
               <p class="italic">&ldquo; This app is great and it is applicable to the kindergarten students. I enjoy this kind mobile application.&rdquo;</p>  
             </blockquote>
-
           </div>
         </div>
       </div>
 
     </div>
   </div>
-</section>
-
-<!-----------End Testimonial--------------->
+</section> <!-----------End Testimonial--------------->
 
 
 
+<div class="container-fluid">  <!---Footer Page--->
+  <div class="row">
+    	<!-- The content of your page would go here. -->
+ 
+		<footer class="footer-distributed">
+ 
+			<div class="footer-left">
+          <!-- <img src="../../assets/img/1.png"> -->
+				<h3><span>MathGarden</span></h3>
+ 
+				<p class="footer-links">
+					<a routerLink="/home">Home</a>
+					|
+					<a routerLink="/about">About</a>
+					|
+					<a routerLink="/services">Services</a>
+					|
+					<a routerLink="/contact">Contact</a>
+				</p>
+ 
+				<p class="footer-company-name">© 2020 MathGarden Learning Solutions Pvt. Ltd.</p>
+			</div>
+ 
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					  <p><span>Blk 17 Lot 6 California,
+						 Belmont Parc Village CayPombo</span>
+						Sta.Maria Bulacan</p>
+				</div>
+ 
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>09976889765</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+          <p><a href="vincentjabonete10@gmail.com">vincentjabonete10</a>
+          </p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About the company</span>
+					We offer build any website to your project or business as well as.</p>
+				<div class="footer-icons">
+					<a href="https://web.facebook.com/vincent.jabonete.01"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-youtube"></i></a>
+				</div>
+			</div>
+		</footer> 
+
+  </div>
+</div> <!---End Footer Page-->
 
 
 
-
-
-
- <!--------End Div--------->
-</div>
 
 
 </body>

@@ -18,6 +18,9 @@ import { MatDialogModule } from '@angular/material/dialog'
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
+// MDB Angular Free
+import { WavesModule, ButtonsModule, IconsModule } from 'angular-bootstrap-md'
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 @NgModule({
   declarations: [
@@ -29,6 +32,7 @@ import { Ng2CarouselamosModule } from 'ng2-carouselamos';
     ModalLogoutComponent,
   ],
   imports: [
+    MDBBootstrapModule.forRoot(),
     BrowserModule,
     AppRoutingModule,
     NgbPaginationModule,
@@ -39,6 +43,10 @@ import { Ng2CarouselamosModule } from 'ng2-carouselamos';
     BrowserAnimationsModule,
     CarouselModule,
     Ng2CarouselamosModule,
+    WavesModule,
+    ButtonsModule,
+    IconsModule,
+  
 
  
     RouterModule.forRoot([
