@@ -21,6 +21,8 @@ import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 // MDB Angular Free
 import { WavesModule, ButtonsModule, IconsModule } from 'angular-bootstrap-md'
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     ServicesComponent,
     ContactComponent,
     ModalLogoutComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     MDBBootstrapModule.forRoot(),
@@ -50,6 +54,14 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
  
     RouterModule.forRoot([
+      {
+        path: 'login',
+        component:LoginComponent
+      },
+      {
+        path:'register',
+        component: RegisterComponent
+      },
       {
         path:'home',
         component: HomeComponent

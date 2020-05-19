@@ -1,4 +1,5 @@
 /*--------CSS For Navigation-----------*/
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 *{
   padding:0;
   margin:0;
@@ -131,6 +132,9 @@ a.active, a:hover{
   }
 
 
+}
+.download{
+  background: orange;
 }
 
 /*---------CSS For Carousel-------*/

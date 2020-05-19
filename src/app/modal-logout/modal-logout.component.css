@@ -1,0 +1,9 @@
+
+.btn-button:hover{
+    background: blue;
+    color: white;
+}
+.modal-content{
+    width:100%;
+    height:250px;
+}

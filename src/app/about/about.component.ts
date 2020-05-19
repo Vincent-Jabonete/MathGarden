@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { MatDialog } from '@angular/material/dialog';
+import { ModalLogoutComponent } from '../modal-logout/modal-logout.component';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
+
+  openDialog(){
+
+    this.dialog.open(ModalLogoutComponent);
+  }
+
+
 
 }
