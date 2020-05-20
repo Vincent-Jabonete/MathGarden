@@ -22,7 +22,7 @@ import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { WavesModule, ButtonsModule, IconsModule } from 'angular-bootstrap-md'
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +33,7 @@ import { RegisterComponent } from './register/register.component';
     ContactComponent,
     ModalLogoutComponent,
     LoginComponent,
-    RegisterComponent,
+ 
   ],
   imports: [
     MDBBootstrapModule.forRoot(),
@@ -57,10 +57,6 @@ import { RegisterComponent } from './register/register.component';
       {
         path: 'login',
         component:LoginComponent
-      },
-      {
-        path:'register',
-        component: RegisterComponent
       },
       {
         path:'home',
