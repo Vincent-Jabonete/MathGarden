@@ -22,7 +22,9 @@ import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { WavesModule, ButtonsModule, IconsModule } from 'angular-bootstrap-md'
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { LoginComponent } from './login/login.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import {  AuthGuard } from './auth.guard';
+import { AuthService } from './auth.service';
 
 @NgModule({
   declarations: [
@@ -50,6 +52,7 @@ import { LoginComponent } from './login/login.component';
     WavesModule,
     ButtonsModule,
     IconsModule,
+    HttpClientModule,
   
 
  
@@ -60,7 +63,8 @@ import { LoginComponent } from './login/login.component';
       },
       {
         path:'home',
-        component: HomeComponent
+        component: HomeComponent,
+        canActivate:[AuthGuard]
       },
       {
         path:'about',
@@ -78,7 +82,7 @@ import { LoginComponent } from './login/login.component';
     ])
     
   ],
-  providers: [],
+  providers: [ AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
