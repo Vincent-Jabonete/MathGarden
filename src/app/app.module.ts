@@ -64,7 +64,7 @@ import { AuthService } from './auth.service';
       {
         path:'home',
         component: HomeComponent,
-        canActivate:[AuthGuard]
+        // canActivate:[AuthGuard]
       },
       {
         path:'about',
