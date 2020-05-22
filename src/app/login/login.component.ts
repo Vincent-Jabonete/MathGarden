@@ -34,6 +34,7 @@ export class LoginComponent implements OnInit {
 
       }else  {
         window.alert(data.message)
+   
       }
     
     })

@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
 import { ModalLogoutComponent } from '../modal-logout/modal-logout.component';
 import { MatDialog } from '@angular/material/dialog';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatButtonModule} from '@angular/material/button';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-home',
@@ -12,9 +10,13 @@ import {MatButtonModule} from '@angular/material/button';
 })
 export class HomeComponent implements OnInit {
  
-  constructor( public dialog: MatDialog) { }
+  constructor( public dialog: MatDialog, private user: UserService) { }
 
   ngOnInit() {
+
+    this.user.getSomeData().subscribe(data => {
+      // this.message =data.message
+    })
   }
 
   
