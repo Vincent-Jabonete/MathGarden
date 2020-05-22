@@ -1,8 +1,13 @@
 //Install express server
 const express = require('express');
 const path = require('path');
-
 const app = express();
+
+const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
+app.use(bodyParser.json());
+app.use(cookieParser());
+
 
 // Serve only the static files form the dist directory
 app.use(express.static(__dirname + '/dist/mathgarden'));
@@ -12,6 +17,11 @@ app.use(express.static(__dirname + '/dist/mathgarden'));
 // });
 
 
+//parse incoming data before routes
+app.use(bodyParser.json())
+
+// api routes
+app.use('/api',require('./api/auth'));
 
 
 app.get('/*', function(req,res) {
