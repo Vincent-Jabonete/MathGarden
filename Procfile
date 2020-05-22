@@ -1,3 +1,3 @@
 web: node server.js
-web: ng serve --proxy-config proxyconfig.json
+web: ng server --proxy-config proxyconfig.json
 
