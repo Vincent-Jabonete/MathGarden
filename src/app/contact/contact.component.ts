@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { ModalLogoutComponent } from '../modal-logout/modal-logout.component';
+
 
 @Component({
   selector: 'app-contact',
@@ -9,14 +9,9 @@ import { ModalLogoutComponent } from '../modal-logout/modal-logout.component';
 })
 export class ContactComponent implements OnInit {
 
-  constructor(public dialog:MatDialog ) { }
+  constructor( ) { }
 
   ngOnInit(): void {
-  }
-
-  openDialog(){
-
-    this.dialog.open(ModalLogoutComponent);
   }
 
 }

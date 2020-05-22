@@ -13,7 +13,6 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AboutComponent } from './about/about.component';
 import {ServicesComponent} from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
-import { ModalLogoutComponent } from './modal-logout/modal-logout.component';
 import { MatDialogModule } from '@angular/material/dialog'
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -21,11 +20,8 @@ import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 // MDB Angular Free
 import { WavesModule, ButtonsModule, IconsModule } from 'angular-bootstrap-md'
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
-import {  AuthGuard } from './auth.guard';
-import { AuthService } from './auth.service';
-import { UserService } from './user.service';
+
 
 @NgModule({
   declarations: [
@@ -34,8 +30,7 @@ import { UserService } from './user.service';
     AboutComponent,
     ServicesComponent,
     ContactComponent,
-    ModalLogoutComponent,
-    LoginComponent,
+ 
  
   ],
   imports: [
@@ -58,14 +53,11 @@ import { UserService } from './user.service';
 
  
     RouterModule.forRoot([
-      {
-        path: 'login',
-        component:LoginComponent
-      },
+   
       {
         path:'home',
         component: HomeComponent,
-        canActivate:[AuthGuard]
+     
       },
       {
         path:'about',
@@ -83,7 +75,7 @@ import { UserService } from './user.service';
     ])
     
   ],
-  providers: [ AuthService, UserService, AuthGuard],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
