@@ -4,13 +4,11 @@ const path = require('path');
 const app = express();
 
 
-
-
 // Serve only the static files form the dist directory
 app.use(express.static(__dirname + '/dist/mathgarden'));
 
-app.get('/api/auth', function (req, res) {
-    return res.send('http://localhost:1234');
+app.get('/api', function (req, res) {
+    return res.send('/api');
 });
 
 
