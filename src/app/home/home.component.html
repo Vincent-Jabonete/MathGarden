@@ -54,8 +54,10 @@
             <li><a mat-button class="btn" routerLink="/about">About</a></li>
             <li><a mat-button class="btn " routerLink="/services">Services</a></li>
             <li><a mat-button class="btn" routerLink="/contact">Contact</a></li>
+            <li><a mat-button class="btn" (click)="openDialog()">Logout</a></li>
             <li><a mat-button class="btn download" href="https://drive.google.com/file/d/1ITvEZMxH8KIKku5Qfb_cQHBHezF1raBw/view" >Download</a></li>
-        </ul>
+          
+          </ul>
   </nav>  <!-------------End Navigation------->
   
 
@@ -369,7 +371,8 @@
 					|
 					<a routerLink="/services">Services</a>
 					|
-					<a routerLink="/contact">Contact</a>
+          <a routerLink="/contact">Contact</a>
+       
 				</p>
  
 				<p class="footer-company-name">© 2020 MathGarden Learning Solutions Pvt. Ltd.</p>

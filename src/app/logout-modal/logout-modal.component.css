@@ -1,0 +1,20 @@
+.body-header{
+    text-align: center;
+    width: 230px;
+    height: 200px;
+  
+}
+.btn-button{
+    margin-top: 35px;
+}
+
+.btn-button:hover{
+    background: blue;
+    color: white;
+}
+@media (max-width: 858px) {
+    .body-header{
+
+     z-index:100;
+    }
+}

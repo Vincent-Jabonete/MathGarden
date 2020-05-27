@@ -23,6 +23,21 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { HttpClientModule } from '@angular/common/http';
 
 
+
+
+//added backend
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UserService } from './shared/user.service';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { LogoutModalComponent } from './logout-modal/logout-modal.component';
+import { AuthGuard } from './auth/auth.guard';
+
+
+
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +45,11 @@ import { HttpClientModule } from '@angular/common/http';
     AboutComponent,
     ServicesComponent,
     ContactComponent,
+    LoginComponent,
+    RegisterComponent,
+    LogoutModalComponent ,
+
+
  
  
   ],
@@ -49,6 +69,8 @@ import { HttpClientModule } from '@angular/common/http';
     ButtonsModule,
     IconsModule,
     HttpClientModule,
+    FormsModule,                               // <========== Add this line!
+    ReactiveFormsModule,                        // <========== Add this line!
   
 
  
@@ -57,6 +79,8 @@ import { HttpClientModule } from '@angular/common/http';
       {
         path:'home',
         component: HomeComponent,
+        canActivate: [AuthGuard]
+      
      
       },
       {
@@ -70,12 +94,23 @@ import { HttpClientModule } from '@angular/common/http';
       {
         path:'contact',
         component:ContactComponent
-      }
+      },
+      {
+        path: 'login',
+        component:LoginComponent
+      },
+      {
+        path: 'register',
+        component:RegisterComponent
+      },
+
+  
+     
 
     ])
     
   ],
-  providers: [ ],
+  providers: [UserService, AuthGuard ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

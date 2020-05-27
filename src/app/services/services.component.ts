@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { LogoutModalComponent } from '../logout-modal/logout-modal.component';
+import { MatDialog } from '@angular/material/dialog';
 
 
 @Component({
@@ -9,10 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServicesComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
+
+  openDialog(){
+
+    this.dialog.open(LogoutModalComponent);
+}
  
 
 }
