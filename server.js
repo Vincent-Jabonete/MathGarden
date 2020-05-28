@@ -8,6 +8,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const passport = require('passport');
 const port = process.env.PORT || 8080;
+const http = require('http'); //new add
 
 
 
@@ -55,7 +56,31 @@ app.use((err, req, res, next) => {
 });
 
 
+//new add
+process
+  .on('SIGTERM', shutdown('SIGTERM'))
+  .on('SIGINT', shutdown('SIGINT'))
+  .on('uncaughtException', shutdown('uncaughtException'));
+
+
 // Start the app by listening on the default Heroku port
+
+
+//new add
+setInterval(console.log.bind(console, 'tick'), 1000);
 app.listen(port, () => {
     console.log(`Server started at PORT : ${port}`)
 });
+
+
+//new add
+  function shutdown(signal) {
+    return (err) => {
+      console.log(`${ signal }...`);
+      if (err) console.error(err.stack || err);
+      setTimeout(() => {
+        console.log('...waited 5s, exiting.');
+        process.exit(err ? 1 : 0);
+      }, 5000).unref();
+    };
+  }
