@@ -49,8 +49,11 @@
     font-style: italic;
 }
 
-@media (max-width: 858px) {
-    .wrapper{
-        padding-top:100px;
+@media only screen and (max-width: 767px) {
+    .body-background {
+      /* The file size of this background image is 93% smaller
+         to improve page load speed on mobile internet connections */
+         background-image: url("../../assets/img/1.png");
     }
-}
+  }
+

@@ -41,8 +41,6 @@ app.use(passport.initialize());
 app.use('/api', rtsIndex);
 
 
-
-
 // error handler
 app.use((err, req, res, next) => {
     if (err.name === 'ValidationError') {
@@ -68,6 +66,8 @@ process
 
 //new add
 setInterval(console.log.bind(console, 'tick'), 1000);
+
+
 app.listen(port, () => {
     console.log(`Server started at PORT : ${port}`)
 });
